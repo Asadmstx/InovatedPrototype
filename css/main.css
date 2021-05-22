@@ -1,8 +1,161 @@
 @import 'fonts.css';
 
+:root {
+    --font-N: 'Lato';
+    --prim-header-bg: #FFF5F5;
+    --prim-main-bg: #fff;
+    --prim-footer-bg: #050C26;
+    --prim-title-color: #050C26;
+    --sec-title-color: #fff;
+    --prim-subtitle-color: #575859;
+    --sec-subtitle-color: #fff;
+    --prim-txt-color: #575859;
+    --sec-txt-color: #fff;
+    --hover-link-color: #3988FF;
+    --btn-bg: #3988FF;
+    --btn-txt-color: #fff;
+    --btn-sec-color: #3988FF;
+    --play-arrow-color: #1B45DA;
+    --inactive-card-bg: #F3F3F3;
+    --inactive-card-outer-bg: rgba(0, 0, 0, 0.6);
+    --inactive-card-outer-filter: blur(104px);
+    --active-card-bg: linear-gradient(180deg, #D93059 0%, #D95B7A 100%);
+    --line-1-color: #E41A1A;
+    --line-1-bg: #e41a1a21;
+    --line-2-color: #DA5A12;
+    --line-2-bg: #da5b1221;
+    --line-3-color: #5BBB10;
+    --line-3-bg: #5abb1021;
+    --line-4-color: #15C1CC;
+    --line-4-bg: #15c0cc21;
+    --features-card-border: 1px solid rgba(5, 12, 38, 0.05);
+    --featuers-card-1-circle: rgba(255, 96, 96, 0.1);
+    --featuers-card-2-circle: rgba(243, 83, 170, 0.1);
+    --featuers-card-3-circle: rgba(197, 72, 255, 0.1);
+    --featuers-card-4-circle: rgba(79, 158, 252, 0.1);
+    --plan-btn-outer-border: 1px solid #1B45DA;
+    --plan-card-inactive-bg: #fff;
+    --plan-card-active-bg-top:  linear-gradient(180deg, #D95374 0%, #D32852 100%);
+    --plan-card-active-bg-bot: linear-gradient(180deg, #D9315A 0%, #F3678A 100%);
+    --plan-card-top-shad: 0px 1px 0px rgba(153, 153, 153, 0.14);
+    --plan-card-bot-shad: 0px 4px 30px rgba(153, 153, 153, 0.14);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato';
 }
+
+body {
+    font-family: var(--font-N);
+    background: var(--prim-main-bg);
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--prim-txt-color);
+    font-size: 18px;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h2 {
+    font-size: 43px;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* header start */
+
+.header {
+    background: var(--prim-header-bg);
+    display: flex;
+    flex-direction: column;
+}
+
+.header__nav {
+    padding: 40px 0 20px;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--prim-title-color);
+}
+
+.header__list {
+    display: flex;
+    column-gap: 50px;
+}
+
+.header__link {
+    position: relative;
+    transition: 500ms;
+}
+
+.header__link:hover {
+    color: var(--hover-link-color);
+}
+
+.header__link::before {
+    position: absolute;
+    content: '';
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 0;
+    height: 10%;
+    border-radius: 20px;
+    background: var(--hover-link-color);
+    transition: 500ms;
+}
+
+.header__link:hover::before {
+    width: 90%;
+}
+
+.header__btns {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.header__btn {
+    width: 134px;
+    padding: 15px 0;
+    border: 1px solid var(--btn-bg);
+    border-radius: 5px;
+    text-align: center;
+    background: var(--btn-bg);
+    color: var(--btn-txt-color);
+}
+
+.header__hiden {
+    display: none;
+}
+
+.header__hiden-link {
+    font-size: 24px;
+}
+
+/* header end */
