@@ -262,6 +262,10 @@ p {
     padding: 96px 0 96px;
 }
 
+.about__container {
+    position: relative;
+}
+
 .about__title, .about__subtitle  {
     text-align: center;
 }
@@ -372,8 +376,8 @@ p {
 
 .about__image {
     position: absolute;
-    top: 305px;
-    left: 0;
+    top: 32%;
+    left: -15%;
     max-width: 718px;
     width: 100%;
     height: 535px;
