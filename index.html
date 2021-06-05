@@ -36,9 +36,31 @@
                 <div class="header__btns">
                     <a href="#" class="header__btn">Contact</a>
                     <div class="header__hiden">
-                        <a href="#" class="header__hiden-link fad fa-ellipsis-v"></a>
+                        <i class="header__hiden-btn fad fa-ellipsis-v"></i>
+                    </div>
+                    <div class="header__hider">
+                        <i class="header__hiden-closer fad fa-times"></i>
                     </div>
                 </div>
+            </div>
+            <div class="header__hiden-nav">
+                <ul class="header__hiden-list">
+                    <li class="header__hiden-item">
+                        <a href="#" class="header__hiden-link header__link">Home</a>
+                    </li>
+                    <li class="header__hiden-item">
+                        <a href="#" class="header__hiden-link header__link">About</a>
+                    </li>
+                    <li class="header__hiden-item">
+                        <a href="#" class="header__hiden-link header__link">Features</a>
+                    </li>
+                    <li class="header__hiden-item">
+                        <a href="#" class="header__hiden-link header__link">Services</a>
+                    </li>
+                    <li class="header__hiden-item">
+                        <a href="#" class="header__hiden-link header__link">Pricing</a>
+                    </li>
+                </ul>
             </div>
         </nav>
         <div class="header__face">
@@ -46,14 +68,18 @@
                 <div class="header__content">
                     <h1 class="header__title">We target the <br>audience with our <span>ideas</span>.</h1>
                     <p class="header__subtitle">Advertising is relied upon to impact the states of mind, expectations
-                        and conduct of the customer’s clients and in this way increment .</p>
+                        and conduct of the customer’s clients and in this way increment .
+                    </p>
                     <a href="#" class="header__video">
                         <div class="header__video-btn"><i class="fas fa-play"></i></div>
                         <p class="header__video-txt">Watch Video</p>
                     </a>
                     <img src="img/png/header__banner.png" alt="" class="header__banner">
-                    <video src="" class="header__video"></video>
                 </div>
+            </div>
+            <div class="video__box">
+                <i class="fas fa-arrow-left video__arrow"></i>
+                <video src="" class="video__src" controls></video>
             </div>
         </div>
         <div class="custom-shape-divider-bottom-1621883042">
@@ -74,7 +100,7 @@
                 <p class="about__subtitle">As a rule the organization settles on the inventive and media choices.
                     Regularly it supplies supporting statistical surveying too, and may even be associated.</p>
                 <div class="about__content">
-                    <ul class="about__list">
+                    <ul class="about__list ">
                         <li class="about__item">
                             <div class="about__item-name">Web Design</div>
                             <div class="about__item-persent">80%</div>
@@ -222,8 +248,8 @@
                 <p class="plan__subtitle">THE BEST OFFERS</p>
                 <h2 class="plan__title">OUR PRICING PLAN</h2>
                 <div class="plan__scroll-box">
-                    <a href="#" class="plan__scroll-btn">Yearly Billing</a>
-                    <a href="#" class="plan__scroll-btn active">Monthly billing</a>
+                    <a href="#" id="scrollBtnYear" class="plan__scroll-btn">Yearly Billing</a>
+                    <a href="#" id="scrollBtnMonth" class="plan__scroll-btn active">Monthly billing</a>
                 </div>
                 <div class="plan__cards">
                     <div class="plan__card">
@@ -247,6 +273,9 @@
                                 <a href="#" class="plan__card-button">Purchase</a>
                             </ul>
                         </div>
+                        <div class="plan__card-tag">
+                            <span class="plan__card-span">Best Deal</span>
+                        </div>
                     </div>
                     <div class="plan__card">
                         <h3 class="plan__card-title">Business</h3>
@@ -268,6 +297,9 @@
                                 </li>
                                 <a href="#" class="plan__card-button">Purchase</a>
                             </ul>
+                        </div>
+                        <div class="plan__card-tag">
+                            <span class="plan__card-span">Best Deal</span>
                         </div>
                     </div>
                     <div class="plan__card">
@@ -291,6 +323,9 @@
                                 <a href="#" class="plan__card-button">Purchase</a>
                             </ul>
                         </div>
+                        <div class="plan__card-tag">
+                            <span class="plan__card-span">Best Deal</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -299,37 +334,108 @@
             <div class="container comment__container">
                 <h2 class="comment__title">See what our clients say!</h2>
                 <p class="comment__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius semper
-                    velit non nulla adipiscing nisl vel mi elementum.</p>
+                    velit non nulla adipiscing nisl vel mi elementum.
+                </p>
                 <div class="comment__box">
-                    <div class="comment__card active">
-                        <div class="comment__card-text">
-                            <img src="img/svg/commentsIcon.svg" alt="" class="comment__card-icon">
-                            <p class="comment__card-txt">Over the years, The Agency Creative have worked with us on
-                                everything from brand design, video, photography.</p>
-                        </div>
-                        <div class="comment__card-profile">
-                            <div class="comment__card-avatar">
-                                <img src="img/png/avatar1.png" alt="" class="comment__card-img">
+                    <div class="comment__cards">
+                        <div class="comment__card">
+                            <div class="comment__card-text">
+                                <img src="img/svg/commentsIcon.svg" alt="" class="comment__card-icon">
+                                <p class="comment__card-txt">Over the years, The Agency Creative have worked with us on
+                                    everything from brand design, video, photography.</p>
                             </div>
-                            <div class="comment__card-info">
-                                <h3 class="comment__card-name">Corey Herwitz</h3>
-                                <p class="comment__card-job">Marketing Officer</p>
+                            <div class="comment__card-profile">
+                                <div class="comment__card-avatar">
+                                    <img src="img/png/avatar1.png" alt="" class="comment__card-img">
+                                </div>
+                                <div class="comment__card-info">
+                                    <h3 class="comment__card-name">Corey Herwitz</h3>
+                                    <p class="comment__card-job">Marketing Officer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment__card">
+                            <div class="comment__card-text">
+                                <img src="img/svg/commentsIcon.svg" alt="" class="comment__card-icon">
+                                <p class="comment__card-txt">Always a pleasure to work with The Agency Creative. Such
+                                    professional and happy people and you know.</p>
+                            </div>
+                            <div class="comment__card-profile">
+                                <div class="comment__card-avatar">
+                                    <img src="img/png/avatar2.png" alt="" class="comment__card-img">
+                                </div>
+                                <div class="comment__card-info">
+                                    <h3 class="comment__card-name">Jakob Calzoni</h3>
+                                    <p class="comment__card-job">Marketing Officer</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="comment__card">
-                        <div class="comment__card-text">
-                            <img src="img/svg/commentsIcon.svg" alt="" class="comment__card-icon">
-                            <p class="comment__card-txt">Always a pleasure to work with The Agency Creative. Such
-                                professional and happy people and you know.</p>
-                        </div>
-                        <div class="comment__card-profile">
-                            <div class="comment__card-avatar">
-                                <img src="img/png/avatar2.png" alt="" class="comment__card-img">
+                    <div class="comment__cards">
+                        <div class="comment__card">
+                            <div class="comment__card-text">
+                                <img src="img/svg/commentsIcon.svg" alt="" class="comment__card-icon">
+                                <p class="comment__card-txt">Over the years, The Agency Creative have worked with us on
+                                    everything from brand design, video, photography.</p>
                             </div>
-                            <div class="comment__card-info">
-                                <h3 class="comment__card-name">Jakob Calzoni</h3>
-                                <p class="comment__card-job">Marketing Officer</p>
+                            <div class="comment__card-profile">
+                                <div class="comment__card-avatar">
+                                    <img src="img/png/avatar1.png" alt="" class="comment__card-img">
+                                </div>
+                                <div class="comment__card-info">
+                                    <h3 class="comment__card-name">Corey Herwitz</h3>
+                                    <p class="comment__card-job">Marketing Officer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment__card">
+                            <div class="comment__card-text">
+                                <img src="img/svg/commentsIcon.svg" alt="" class="comment__card-icon">
+                                <p class="comment__card-txt">Always a pleasure to work with The Agency Creative. Such
+                                    professional and happy people and you know.</p>
+                            </div>
+                            <div class="comment__card-profile">
+                                <div class="comment__card-avatar">
+                                    <img src="img/png/avatar2.png" alt="" class="comment__card-img">
+                                </div>
+                                <div class="comment__card-info">
+                                    <h3 class="comment__card-name">Jakob Calzoni</h3>
+                                    <p class="comment__card-job">Marketing Officer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment__cards">
+                        <div class="comment__card">
+                            <div class="comment__card-text">
+                                <img src="img/svg/commentsIcon.svg" alt="" class="comment__card-icon">
+                                <p class="comment__card-txt">Over the years, The Agency Creative have worked with us on
+                                    everything from brand design, video, photography.</p>
+                            </div>
+                            <div class="comment__card-profile">
+                                <div class="comment__card-avatar">
+                                    <img src="img/png/avatar1.png" alt="" class="comment__card-img">
+                                </div>
+                                <div class="comment__card-info">
+                                    <h3 class="comment__card-name">Corey Herwitz</h3>
+                                    <p class="comment__card-job">Marketing Officer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment__card">
+                            <div class="comment__card-text">
+                                <img src="img/svg/commentsIcon.svg" alt="" class="comment__card-icon">
+                                <p class="comment__card-txt">Always a pleasure to work with The Agency Creative. Such
+                                    professional and happy people and you know.</p>
+                            </div>
+                            <div class="comment__card-profile">
+                                <div class="comment__card-avatar">
+                                    <img src="img/png/avatar2.png" alt="" class="comment__card-img">
+                                </div>
+                                <div class="comment__card-info">
+                                    <h3 class="comment__card-name">Jakob Calzoni</h3>
+                                    <p class="comment__card-job">Marketing Officer</p>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -3,7 +3,68 @@
 /* @media (max-width: 1320px) {} */
 /* @media (max-width: 1290px) {} */
 /* @media (max-width: 1140px) {} */
-/* @media (max-width: 1024px) {} */
+@media (max-width: 1024px) {
+    /* header start */
+
+    .video__src {
+        width: 90%;
+    }
+
+    /* header end */
+    /* about start */
+
+    .about__content {
+        min-height: 900px;
+        justify-content: center;
+        margin-top: 90px;
+    }
+
+    .about__image {
+        top: 65%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .about__list {
+        max-width: 72%;
+    }
+
+    /* about end */
+    /* features start */
+
+    .features__card  {
+        max-width: 230px;
+    }
+
+    /* features end */
+    /* service start */
+
+    .service__cards {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        'card1 card1'
+        'card1 card1'
+        'card1 card1'
+        ;
+        place-items: center;
+    }
+
+    /* service end */
+    /* plan start */
+
+    .plan__cards {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 25px;
+    }
+
+    .plan__card {
+        max-width: 500px;
+    }
+
+    /* plan end */
+}
 @media (max-width: 992px) {
     /* header start */
     .header__list {
@@ -17,13 +78,199 @@
     }
     /* header end */
 }
-/* @media (max-width: 768px) {} */
+@media (max-width: 768px) {
+    /* header start */
+
+    .header__banner {
+        left: 24%;
+    }
+
+    /* header end */
+    /* features start */
+
+    .features__cards  {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 25px;
+    }
+
+    .features__card  {
+        max-width: 500px;
+    }
+
+    /* features end */
+    /* service start */
+
+    .service__cards {
+        gap: 30px 30px;
+    }
+
+    /* service end */
+    /* comment start */
+
+    .comment__card  {
+        max-width: 252px;
+    }
+
+    /* comment end */
+    /* footer start */
+
+    .footer__cards {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    /* footer end */
+}
 /* @media (max-width: 736px) {} */
 /* @media (max-width: 734px) {} */
-/* @media (max-width: 682px) {} */
-/* @media (max-width: 667px) {} */
+@media (max-width: 682px) {
+    /* header start */
+
+    .header__banner  {
+        display: none;
+    }
+
+    /* header end */
+    /* about start */
+
+    .about__container {
+        overflow: hidden;
+    }
+
+    /* about end */
+    /* service start */
+
+    .service__cards  {
+        gap: 7px 7px;
+    }
+
+    /* service end */
+}
+@media (max-width: 667px) {
+    /* header start */
+
+    .header__content  {
+        padding: 50px 0 100px;
+    }
+
+    .header__hiden-nav {
+        top: 15%;
+    }
+
+    /* header end */
+    /* about start */
+
+    .about {
+        padding-bottom: 0;
+    }
+
+    .about__image {
+        left: 43%;
+    }
+
+    /* about end */
+    /* features start */
+
+    .featuers {
+        padding-bottom: 0;
+    }
+
+    /* features end */
+    /* service start */
+
+    .service {
+        padding-bottom: 0;
+    }
+
+    .service__cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'card1' 'card1' 'card1' 'card1' 'card1' 'card1';
+        row-gap: 15px;
+    }
+
+    /* service end */
+    /* plan start */
+
+    .plan {
+        padding-bottom: 0;
+    }
+
+    /* plan end */
+    /* comment start */
+
+    .comment {
+        padding-bottom: 0;
+    }
+
+    /* comment end */
+}
 /* @media (max-width: 576px) {} */
-/* @media (max-width: 414px) {} */
+@media (max-width: 414px) {
+
+    .section__name {
+        font-size: 50px;
+    }
+
+    h2, h3 {
+        font-size: 30px;
+    }
+    /* header start */
+
+    .header__btn  {
+        width: 85px;
+    }
+
+    .header__title  {
+        font-size: 45px;
+        line-height: 53.2px;
+    }
+
+    .header__hiden-nav {
+        top: 18%;
+    }
+
+    /* header end */
+    /* about start */
+
+    .about__list  {
+        max-width: 100%;
+    }
+
+    .about__image  {
+        left: -13%;
+    }
+
+    /* about end */
+    /* service start */
+
+    .service__card-content {
+        max-width: 245px;
+    }
+
+    /* service end */
+    /* comment start */
+
+
+    .comment__box  {
+        min-height: 655px;
+    }
+
+    .comment__cards {
+        flex-direction: column;
+        justify-content: flex-start;
+        row-gap: 30px;
+        top: 25px;
+    }
+
+    .comment__card-profile {
+        order: -1;
+    }
+
+    /* comment end */
+}
 /* @media (max-width: 412px) {} */
 /* @media (max-width: 375px) {} */
 /* @media (max-width: 320px) {} */
